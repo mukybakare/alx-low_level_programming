@@ -1,2 +1,2 @@
 #!/bin/bash
-getchar = $CFILE
+gcc -E $CFILE -o c
