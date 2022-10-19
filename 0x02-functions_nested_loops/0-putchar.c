@@ -16,7 +16,6 @@ int main(void)
 			putchar(*read);
 			read++;
 		}
-	putchar('\n');
 	return (0);
 
 }
