@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include <time.h>
+#include<ctype.h>
 #include <stdlib.h>
 /**
 *main - main block
@@ -8,19 +8,18 @@
 */
 int main(void)
 {
-char c = 'a';
-while (c <= 'z')
+char x;
+
+for (int x = 'A'; x <= 'Z'; x++)
 {
-putchar(c);
-c++;
+int lower_x = tolower(x);
+putchar(lower_x);
+
 }
-putchar('\n');
-return (0);
-while (c <= 'z')
+for (int x = 'a'; x <= 'z'; x++)
 {
-putchar(c);
-c += 1;
-}
+int Capital_x = toupper(x);
 putchar('\n');
+}
 return (0);
 }
