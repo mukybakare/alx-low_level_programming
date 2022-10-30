@@ -1,25 +1,23 @@
-#include<stdio.h>
-#include<ctype.h>
-#include <stdlib.h>
+/*
+ * File: 2-print_alphabet.c
+ * Auth: Brennan D Baraban
+ */
+
+#include <stdio.h>
+
 /**
-*main - main block
-*Description: A programme that prints lower case letters
-*Return: 0
-*/
+ * main - Prints the alphabet in lowercase.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-char x;
+	char letter;
 
-for (int x = 'A'; x <= 'Z'; x++)
-{
-int lower_x = tolower(x);
-putchar(lower_x);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-}
-for (int x = 'a'; x <= 'z'; x++)
-{
-int Capital_x = toupper(x);
-putchar('\n');
-}
-return (0);
+	putchar('\n');
+
+	return (0);
 }
