@@ -1,26 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
+
 /**
- * main-Function to print the alphabet
- * in lower case
- * in upper case
- * Return: Success (0)
+ * main - Prints the alphabet in lowercase, and then in uppercase.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-char x;
+	char letter;
 
-for (int x = 'A'; x <= 'Z'; x++)
-{
-int lower_x = tolower(x);
-putchar(lower_x);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return (0);
 }
-for (int x = 'a'; x <= 'z'; x++)
-{
-int Capital_x = toupper(x);
-putchar('\n');
-}
-return (0);
-}
+
